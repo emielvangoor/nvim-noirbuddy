@@ -1,7 +1,9 @@
 local M = {}
 
 function M.setup(opts)
-  opts = opts or {}
+  opts = opts or {
+    preset = "miami-nights"
+  }
 
   vim.api.nvim_command("set termguicolors")
   vim.api.nvim_command(string.format("set background=%s", 'dark'))
